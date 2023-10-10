@@ -1,4 +1,4 @@
-# Adaptive Card Previewer VS Code Extension
+# Microsoft Adaptive Card Previewer VS Code Extension
 
 A VS Code extension to instantly preview adaptive card built for Teams Bot, Message Extension and Copilot Plugin while editing them in VS Code.
 
