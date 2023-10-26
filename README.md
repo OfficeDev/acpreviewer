@@ -1,6 +1,6 @@
-# Microsoft Adaptive Card Previewer for Visual Studio Code
+# Microsoft Adaptive Card Previewer 
 
-The Microsoft Adaptive Card Previewer uses the latest rendering stack for Microsoft Teams to provide a more accurate preview of Adaptive Cards. You can open a side-by-side preview to view changes live, toggle between light, dark, and high contrast themes.
+The Microsoft Adaptive Card Previewer is an extension for Visual Studio Code. It uses the latest rendering stack for Microsoft Teams to provide a more accurate preview of Adaptive Cards. You can open a side-by-side preview to view changes live, toggle between light, dark, and high-contrast themes.
 
 ![ACP](https://github.com/OfficeDev/TeamsFx/assets/11220663/359ae4f3-568b-4476-89e3-b8fa58fc93e7)
 
@@ -13,10 +13,10 @@ Adaptive Card Previewer supports:
 
   ![preview](https://github.com/OfficeDev/TeamsFx/assets/10163840/3e6bac96-3375-4922-9a77-2a649d837fd6)
 
-- Switch between different themes (Light/Dark/HighContrast) to preview your cards so you can design with confidence.
+- Switch between different themes (Light/Dark/High-Contrast) to preview your cards so you can design with confidence.
   ![switch-theme](https://github.com/OfficeDev/TeamsFx/assets/10163840/40e30d72-e2b3-404e-8be6-2ed51fc873e5)
 
-- Separation of **data** from the **layout** in an Adaptive Card [template language](https://learn.microsoft.com/adaptive-cards/templating/). Use command `Adaptive Card: New Data File` to add a data file for a template. This will generate an empty file where you can bind data to your adaptive card templat
+- Separation of **data** from the **layout** in an Adaptive Card [template language](https://learn.microsoft.com/adaptive-cards/templating/). Use the command `Adaptive Card: New Data File` to add a data file for a template. This will generate an empty file where you can bind data to your adaptive card template.
 
 - Seamless integration with Teams Toolkit that allows a Just-In-Time installation of Adaptive Card Previewer when you are iterating on adaptive cards generated from Teams Toolkit project creation.
   ![image](https://github.com/OfficeDev/TeamsFx/assets/10163840/20e9f6b3-dd6d-430c-ab56-eaea37b02613)
@@ -26,13 +26,13 @@ Adaptive Card Previewer supports:
 
 ## Limitations
 
-Some features of an Adaptive Card are not supported::
+Some features of an Adaptive Card are not supported:
 
 - [People picker](https://learn.microsoft.com/microsoftteams/platform/task-modules-and-cards/cards/people-picker)
 - [Dynamic type-ahead search](https://learn.microsoft.com/microsoftteams/platform/task-modules-and-cards/cards/dynamic-search)
 - [User mention](https://learn.microsoft.com/microsoftteams/platform/task-modules-and-cards/cards/cards-format?tabs=adaptive-md%2Cdesktop%2Cconnector-html#sample-adaptive-card-with-a-mention)
 - [Image stage view](https://learn.microsoft.com/microsoftteams/platform/task-modules-and-cards/cards/cards-format?tabs=adaptive-md%2Cdesktop%2Cconnector-html#stage-view-for-images-in-adaptive-cards)
-- [Full width control](https://learn.microsoft.com/microsoftteams/platform/task-modules-and-cards/cards/cards-format?tabs=adaptive-md%2Cdesktop%2Cconnector-html#full-width-adaptive-card)
+- [Full-width control](https://learn.microsoft.com/microsoftteams/platform/task-modules-and-cards/cards/cards-format?tabs=adaptive-md%2Cdesktop%2Cconnector-html#full-width-adaptive-card)
 
 Please stay tuned for updates as we continue to expand the capabilities of Adaptive Card Previewer.
 
