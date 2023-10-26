@@ -1,0 +1,95 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.5",
+  "body": [
+      {
+          "type": "TextBlock",
+          "size": "Medium",
+          "weight": "Bolder",
+          "text": " Input.Text elements",
+          "horizontalAlignment": "Center",
+          "wrap": true,
+          "style": "heading"
+      },
+      {
+          "type": "Input.Text",
+          "style": "text",
+          "placeholder": "Input a text",
+          "id": "SimpleVal"
+      },
+      {
+        "type": "Input.Text",
+        "id": "myPassword",
+        "placeholder": "Input a password",
+        "style": "password"
+      },
+      {
+          "type": "Input.Number",
+          "placeholder": "Input a number",
+          "min": -5,
+          "max": 5,
+          "value": 1,
+          "id": "NumVal"
+      },
+      {
+          "type": "Input.Date",
+          "placeholder": "Input a date",
+          "id": "DateVal",
+          "value": "2017-09-20"
+      },
+      {
+          "type": "Input.Time",
+          "placeholder": "Input a time",
+          "id": "TimeVal",
+          "value": "16:59"
+      },
+      {
+          "type": "TextBlock",
+          "text": "What color do you want? (compact)",
+          "wrap": true
+      },
+      {
+          "type": "Input.ChoiceSet",
+          "id": "CompactSelectVal",
+          "value": "3",
+          "choices": [
+              {
+                  "title": "Red",
+                  "value": "1"
+              },
+              {
+                  "title": "Green",
+                  "value": "2"
+              },
+              {
+                  "title": "Blue",
+                  "value": "3"
+              }
+          ]
+      },
+      {
+          "type": "Input.Toggle",
+          "title": "I accept the terms and conditions (True/False)",
+          "id": "AcceptsTerms",
+          "wrap": false,
+          "value": "false"
+      }
+  ],
+  "actions": [
+      {
+        "type": "Action.Execute",
+        "title": "Execute",
+        "data": {
+          "foo":"bar",
+          "baz":42
+        },
+        "associatedInputs": "auto"
+      },
+      {
+        "type": "Action.OpenUrl",
+        "title": "OpenUrl",
+        "url": "https://adaptivecards.io"
+      }
+  ]
+}

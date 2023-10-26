@@ -1,0 +1,53 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.5",
+  "body": [
+      {
+          "type": "TextBlock",
+          "text": "New Event Occurred!",
+          "size": "Large",
+          "weight": "Bolder",
+          "wrap": true
+      },
+      {
+          "type": "TextBlock",
+          "text": "Contoso App",
+          "isSubtle": true,
+          "color": "Accent",
+          "weight": "Bolder",
+          "size": "Small",
+          "spacing": "None"
+      },
+      {
+          "type": "TextBlock",
+          "text": "Detailed description of what happened so the user knows what is going on.",
+          "isSubtle": true,
+          "wrap": true
+      },
+      {
+          "type": "FactSet",
+          "facts": [
+              {
+                  "title": "Prop1:",
+                  "value": "[https://github.com/OfficeDev/TeamsFx](https://github.com/OfficeDev/TeamsFx)"
+              },
+              {
+                  "title": "Prop2:",
+                  "value": "sample@contoso.com"
+              },
+              {
+                  "title": "Prop3:",
+                  "value": "2022-05-04"
+              }
+          ]
+      }
+  ],
+  "actions": [
+      {
+          "type": "Action.OpenUrl",
+          "title": "View Details",
+          "url": "https://www.adaptivecards.io/"
+      }
+  ]
+}

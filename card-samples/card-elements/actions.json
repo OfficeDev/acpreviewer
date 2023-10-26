@@ -1,0 +1,62 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.5",
+  "body": [
+    {
+      "type": "TextBlock",
+      "text": "Present a form and submit it back to the originator"
+    },
+    {
+      "type": "Input.Text",
+      "id": "firstName",
+      "label": "What is your first name?"
+    },
+    {
+      "type": "Input.Text",
+      "id": "lastName",
+      "label": "What is your last name?"
+    },
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
+          "type": "Action.OpenUrl",
+          "title": "OpenUrl",
+          "url": "https://adaptivecards.io"
+        },
+        {
+          "type": "Action.Execute",
+          "title": "Execute",
+          "style": "destructive"
+        },
+        {
+          "type": "Action.Submit",
+          "title": "Submit",
+          "tooltip": "Click here to add your name to the waiting list."
+        },
+        {
+          "type": "Action.Execute",
+          "title": "Confirm data"
+        },
+        {
+          "type": "Action.Execute",
+          "title": "Disabled",
+          "isEnabled": false
+        },
+        {
+          "type": "Action.Execute",
+          "title": "Edit data",
+          "verb": "edit",
+          "mode": "secondary"
+        },
+        {
+          "type": "Action.Execute",
+          "title": "Delete data",
+          "verb": "delete",
+          "mode": "secondary"
+        }
+      ]
+    }
+  ]
+}

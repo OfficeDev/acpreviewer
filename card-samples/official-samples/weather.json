@@ -1,0 +1,222 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.6",
+  "speak": "<s>Weather forecast for Tuesday is high of 50 and low of 39 degrees with a 31% chance of rain</s><s>Winds will be 4 mph from the SSE</s>",
+  "backgroundImage": {
+      "url": "https://messagecardplayground.azurewebsites.net/assets/Mostly%20Cloudy-Background.jpg"
+  },
+  "body": [
+      {
+          "type": "ColumnSet",
+          "columns": [
+              {
+                  "type": "Column",
+                  "width": 35,
+                  "items": [
+                      {
+                          "type": "Image",
+                          "url": "https://messagecardplayground.azurewebsites.net/assets/Mostly%20Cloudy-Square.png",
+                          "size": "Stretch",
+                          "altText": "Mostly cloudy weather"
+                      }
+                  ]
+              },
+              {
+                  "type": "Column",
+                  "width": 65,
+                  "items": [
+                      {
+                          "type": "TextBlock",
+                          "text": "{{DATE(2019-11-05T15:00:51+00:00, SHORT)}}",
+                          "weight": "Bolder",
+                          "size": "Large",
+                          "wrap": true,
+                          "color": "Dark",
+                          "style": "heading"
+                      },
+                      {
+                          "type": "TextBlock",
+                          "text": "39 / 50",
+                          "size": "Medium",
+                          "spacing": "None",
+                          "wrap": true,
+                          "color": "Dark"
+                      },
+                      {
+                          "type": "TextBlock",
+                          "text": "31% chance of rain",
+                          "spacing": "None",
+                          "wrap": true,
+                          "color": "Dark"
+                      },
+                      {
+                          "type": "TextBlock",
+                          "text": "Winds 4.4 mph SSE",
+                          "spacing": "None",
+                          "wrap": true,
+                          "color": "Dark"
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "type": "ColumnSet",
+          "columns": [
+              {
+                  "type": "Column",
+                  "width": 20,
+                  "items": [
+                      {
+                          "type": "TextBlock",
+                          "horizontalAlignment": "Center",
+                          "text": "Wednesday",
+                          "wrap": true,
+                          "color": "Dark"
+                      },
+                      {
+                          "type": "Image",
+                          "url": "https://messagecardplayground.azurewebsites.net/assets/Drizzle-Square.png",
+                          "altText": "Broken clouds"
+                      },
+                      {
+                          "type": "TextBlock",
+                          "text": "**High**\t54",
+                          "wrap": true,
+                          "color": "Dark",
+                          "horizontalAlignment": "Center"
+                      },
+                      {
+                          "type": "TextBlock",
+                          "text": "**Low**\t38",
+                          "wrap": true,
+                          "color": "Dark",
+                          "spacing": "None",
+                          "horizontalAlignment": "Center"
+                      }
+                  ],
+                  "selectAction": {
+                      "type": "Action.OpenUrl",
+                      "title": "View Wednesday, Broken clouds. Highest temperature 54 degrees. Lowest temperature 38 degrees.",
+                      "url": "https://www.microsoft.com"
+                  }
+              },
+              {
+                  "type": "Column",
+                  "width": 20,
+                  "items": [
+                      {
+                          "type": "TextBlock",
+                          "horizontalAlignment": "Center",
+                          "text": "Thursday",
+                          "wrap": true,
+                          "color": "Dark"
+                      },
+                      {
+                          "type": "Image",
+                          "url": "https://messagecardplayground.azurewebsites.net/assets/Mostly%20Cloudy-Square.png",
+                          "altText": "Overcast clouds"
+                      },
+                      {
+                          "type": "TextBlock",
+                          "text": "**High**\t56",
+                          "wrap": true,
+                          "color": "Dark",
+                          "horizontalAlignment": "Center"
+                      },
+                      {
+                          "type": "TextBlock",
+                          "text": "**Low**\t33",
+                          "wrap": true,
+                          "color": "Dark",
+                          "spacing": "None",
+                          "horizontalAlignment": "Center"
+                      }
+                  ],
+                  "selectAction": {
+                      "type": "Action.OpenUrl",
+                      "title": "View Thursday, Overcast clouds. Highest temperature 56 degrees. Lowest temperature 33 degrees.",
+                      "url": "https://www.microsoft.com"
+                  }
+              },
+              {
+                  "type": "Column",
+                  "width": 20,
+                  "items": [
+                      {
+                          "type": "TextBlock",
+                          "horizontalAlignment": "Center",
+                          "text": "Friday",
+                          "wrap": true,
+                          "color": "Dark"
+                      },
+                      {
+                          "type": "Image",
+                          "url": "https://messagecardplayground.azurewebsites.net/assets/Mostly%20Cloudy-Square.png",
+                          "altText": "Overcast clouds"
+                      },
+                      {
+                          "type": "TextBlock",
+                          "text": "**High**\t60",
+                          "wrap": true,
+                          "color": "Dark",
+                          "horizontalAlignment": "Center"
+                      },
+                      {
+                          "type": "TextBlock",
+                          "text": "**Low**\t37",
+                          "wrap": true,
+                          "color": "Dark",
+                          "spacing": "None",
+                          "horizontalAlignment": "Center"
+                      }
+                  ],
+                  "selectAction": {
+                      "type": "Action.OpenUrl",
+                      "title": "View Friday, Overcast clouds. Highest temperature 60 degrees. Lowest temperature 37 degrees.",
+                      "url": "https://www.microsoft.com"
+                  }
+              },
+              {
+                  "type": "Column",
+                  "width": 20,
+                  "items": [
+                      {
+                          "type": "TextBlock",
+                          "horizontalAlignment": "Center",
+                          "text": "Saturday",
+                          "wrap": true,
+                          "color": "Dark"
+                      },
+                      {
+                          "type": "Image",
+                          "url": "https://messagecardplayground.azurewebsites.net/assets/Mostly%20Cloudy-Square.png",
+                          "altText": "Overcast clouds"
+                      },
+                      {
+                          "type": "TextBlock",
+                          "text": "**High**\t50",
+                          "wrap": true,
+                          "color": "Dark",
+                          "horizontalAlignment": "Center"
+                      },
+                      {
+                          "type": "TextBlock",
+                          "text": "**Low**\t37",
+                          "wrap": true,
+                          "color": "Dark",
+                          "spacing": "None",
+                          "horizontalAlignment": "Center"
+                      }
+                  ],
+                  "selectAction": {
+                      "type": "Action.OpenUrl",
+                      "title": "View Saturday, Overcast clouds. Highest temperature 50 degrees. Lowest temperature 37 degrees.",
+                      "url": "https://www.microsoft.com"
+                  }
+              }
+          ]
+      }
+  ]
+}
