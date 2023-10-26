@@ -1,0 +1,82 @@
+{
+  "version": "devPreview",
+  "$schema": "<URL_REFERENCE_TO_SCHEMA>",
+  "responseLayout": "list",
+  "responseCardTemplate": {
+    "type": "AdaptiveCard",
+    "version": "1.5",
+    "body": [
+      {
+        "type": "TextBlock",
+        "size": "Large",
+        "weight": "Bolder",
+        "text": "Repairs"
+      },
+      {
+        "type": "Container",
+        "items": [
+          {
+            "type": "ColumnSet",
+            "columns": [
+              {
+                "type": "Column",
+                "width": "auto",
+                "items": [
+                  {
+                    "type": "Image",
+                    "url": "${image}",
+                    "size": "Medium"
+                  }
+                ]
+              },
+              {
+                "type": "Column",
+                "width": "stretch",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "weight": "Bolder",
+                    "text": "${title}",
+                    "wrap": true
+                  },
+                  {
+                    "type": "TextBlock",
+                    "spacing": "None",
+                    "text": "${description}",
+                    "isSubtle": true,
+                    "wrap": true
+                  },
+                  {
+                    "type": "TextBlock",
+                    "spacing": "None",
+                    "text": "Assigned to: ${assignedTo}",
+                    "isSubtle": true,
+                    "wrap": true
+                  },
+                  {
+                    "type": "TextBlock",
+                    "spacing": "None",
+                    "text": "Date: ${date}",
+                    "isSubtle": true,
+                    "wrap": true
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json"
+  },
+  "previewCardTemplate": {
+    "title": "${title}",
+    "description": "${description}",
+    "assignedTo": "${assignedTo}",
+    "image": {
+      "url": "${image}",
+      "alt": "${if(title, title, 'N/A')}",
+      "$when": "${image != null}"
+  }
+  }
+}

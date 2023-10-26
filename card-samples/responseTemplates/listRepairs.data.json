@@ -1,0 +1,8 @@
+{
+  "id": 1,
+  "title": "Repair broken chair",
+  "description": "The left leg of the chair is broken and needs to be repaired",
+  "assignedTo": "John Doe",
+  "date": "2022-05-01",
+  "image": "https://picsum.photos/200/300"
+}
