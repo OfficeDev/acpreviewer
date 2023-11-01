@@ -14,7 +14,7 @@ Adaptive Card Previewer supports:
   ![preview](https://github.com/OfficeDev/TeamsFx/assets/10163840/3e6bac96-3375-4922-9a77-2a649d837fd6)
 
 - Switch between different themes (Light/Dark/High-Contrast) to preview your cards so you can design with confidence.
-  ![Theme](https://github.com/OfficeDev/acpreviewer/assets/11220663/371cad96-bc13-4a33-9c42-f276221ea4d5)
+  ![Theme](https://github.com/OfficeDev/TeamsFx/assets/11220663/df22d424-0b59-4fa6-a060-df7554615c0b)
 
 
 - Separation of **data** from the **layout** in an Adaptive Card [template language](https://learn.microsoft.com/adaptive-cards/templating/). Use the command `Adaptive Card: New Data File` to add a data file for a template. This will generate an empty file where you can bind data to your adaptive card template.
